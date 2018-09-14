@@ -1,0 +1,23 @@
+{
+  "name": "iex_stream",
+  "version": "1.0.0",
+  "description": "Stream IEX trade data",
+  "author": "zhy0 <zhy@tuta.io>",
+  "main": "stream.js",
+  "scripts": {
+    "start": "node stream.js",
+    "test": "jshint stream.js"
+  },
+  "dependencies": {
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1",
+    "influx": "^5.0.7",
+    "better-queue": "^3.8.10",
+    "winston": "^3.1.0"
+  },
+  "repository": "https://github.com/zhy0/iex_stream.git",
+  "license": "MIT",
+  "devDependencies": {
+    "jshint": "^2.9.6"
+  }
+}
