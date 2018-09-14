@@ -1,0 +1,15 @@
+version: '3'
+services:
+  iex_stream:
+    build: .
+    restart: always
+
+  influxdb:
+    image: "influxdb:latest"
+
+  grafana:
+    image: "grafana/grafana:latest"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./grafana/provisioning/:/etc/grafana/provisioning/
