@@ -1,0 +1,12 @@
+# config file version
+apiVersion: 1
+
+datasources:
+- name: trades
+  type: influxdb
+  # <string, required> access mode. direct or proxy. Required
+  access: proxy
+  url: http://influxdb:8086
+  database: trades
+  editable: true
+  org_id: 1
